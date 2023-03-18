@@ -1,6 +1,17 @@
 # Bayesian Black Box we wish to optimize - hyperparameters
 
-"""
+def lgb_black_box(
+    num_leaves,  # int
+    min_data_in_leaf,  # int
+    learning_rate,
+    min_sum_hessian_in_leaf,    # int  
+    feature_fraction,
+    lambda_l1,
+    lambda_l2,
+    min_gain_to_split,
+    max_depth):
+    
+    """
     Args:
             None
             In practice would add in the option to set the parameters via this function
@@ -11,19 +22,8 @@
     Notes:
             First draft
 
-"""
+    """
 
-def lgb_black_box(
-      
-    num_leaves,  # int
-    min_data_in_leaf,  # int
-    learning_rate,
-    min_sum_hessian_in_leaf,    # int  
-    feature_fraction,
-    lambda_l1,
-    lambda_l2,
-    min_gain_to_split,
-    max_depth):
     
     # lgb need some inputs as int but BayesianOptimization library send continuous values values. so we change type.
 
