@@ -21,6 +21,8 @@ def lgb_black_box(
 
     Notes:
             First draft
+            Plans to add more user arguments after intial rounds of testing
+            Plans to make the metric more dynamic (so it doesn't just return RMSE)
 
     """
 
